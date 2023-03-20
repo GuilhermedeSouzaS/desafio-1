@@ -1,0 +1,51 @@
+:root {
+    --branco: #ffffff;
+    --principal-font: "Lexend Deca";
+
+}
+
+body {
+    font-family: var(--principal-font);
+    font-weight: 400;
+    font-size: 14px;
+
+}
+
+.cabecalho {
+    width: 100vw;
+    height: 200px;
+    background: linear-gradient(90deg, #574AE8 0%, #3EA1DB 100%);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.logotipo {
+    display: grid;
+    color: var(--branco);
+    font-size: 18px;
+    align-items: center;
+    margin-left: 22px;
+    
+
+}
+
+.blog {
+    display: grid;
+    color: var(--branco);
+    font-size: 18px;
+    justify-content: end;
+    align-items: center;
+    margin-right: 22px;
+
+}
+
+.search {
+    margin: 0 auto;
+    grid-column: 1 / span 2;
+    width: 374px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+
+}
