@@ -1,5 +1,8 @@
 :root {
     --branco: #ffffff;
+    --fundo: #F3F5F7;
+    --cor-titulo: #1A202C;
+    --cor-paragrafo: #717171;
     --principal-font: "Lexend Deca";
     --secundary-font: "Inter";
 
@@ -8,7 +11,8 @@
 body {
     font-family: var(--principal-font);
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
+    color: var(--cor-paragrafo);
 
 }
 
@@ -19,6 +23,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+
 }
 
 .logotipo {
@@ -27,7 +32,7 @@ body {
     font-size: 18px;
     font-weight: 300;
     align-items: center;
-    margin-left: 22px;
+    margin-left: 11%;
     
 
 }
@@ -39,14 +44,14 @@ body {
     font-weight: 300;
     justify-content: end;
     align-items: center;
-    margin-right: 22px;
+    margin-right: 11%;
 
 }
 
 .search {
     margin: 0 auto;
     grid-column: 1 / span 2;
-    width: 374px;
+    width: 90%;
     height: 40px;
     background: rgba(255, 255, 255, 0.2);
     border-radius: 5px;
@@ -66,3 +71,57 @@ body {
     font-size: 14px;
 
 }
+
+.principal {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--fundo);
+    padding-top: 50px;
+
+}
+
+.noticia {
+    width: 90%;
+    display: grid;
+    grid-template-rows: 1.3em 4em 1fr;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 1.5em;
+    margin-bottom: 35px;
+    border-radius: 5px;
+    background-color: var(--branco);
+    padding: 1em;
+
+}
+
+.noticia__data {
+    display: grid;
+    align-items: center;
+
+}
+
+.favorito {
+    display: flex;
+    width: 24px;
+    height: 24px;
+    justify-self: end;
+    align-self: center;
+
+
+}
+
+.noticia__titulo {
+    display: flex;
+    grid-column: 1 / span 2;
+    font-size: 26px;
+    color: var(--cor-titulo);
+    align-self: center;
+
+}
+
+.noticia__paragrafo {
+    grid-column: 1 / span 2;
+
+}
+
+
